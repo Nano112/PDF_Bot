@@ -8,9 +8,9 @@ from Temporay_PDF import Temporary_PDF
 temp_PDF = {}
 readers = {}
 files = PDF_files()
-
+TOKEN=''
 with open('token', 'r') as t:
-    TOKEN = t.read()
+    TOKEN = t.readline()
 
 
 client = discord.Client()
