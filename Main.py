@@ -9,8 +9,9 @@ temp_PDF = {}
 readers = {}
 files = PDF_files()
 
-# TODO OPEN TOKEN FROM FILE
-TOKEN = 'NTk0MTU1NzA3MzIyODU5NTI5.XRYVJA.u9-_hZkvaKNBoxKoZXHazUIRv9Y'
+with open('token', 'r') as t:
+    TOKEN = t.read()
+
 
 client = discord.Client()
 
